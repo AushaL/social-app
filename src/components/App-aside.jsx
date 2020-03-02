@@ -1,18 +1,17 @@
 import React from 'react';
+import classes from './App-aside.module.css';
 
 const appAside = () => {
-    return (
-        <aside className="app-aside">
-            <nav>
-            <ul>
-                <li><a>Profile</a></li>
-                <li><a>Messages</a></li>
-                <li><a>News</a></li>
-                <li><a>Music</a></li>
-                <li><a>Settings</a></li>
-            </ul>
+    return (        
+            <nav className={classes.nav}>
+                <ul>
+                    <li className={classes.item}><a>Profile</a></li>
+                    <li className={classes.item}><a>Messages</a></li>
+                    <li className={classes.item}><a>News</a></li>
+                    <li className={classes.item}><a>Music</a></li>
+                    <li className={classes.item}><a>Settings</a></li>
+                </ul>
             </nav>
-        </aside>
     )
 }
 

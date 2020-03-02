@@ -1,8 +1,9 @@
 import React from 'react';
+import classes from './User-profile.module.css'
 
 const userProfile = () => {
     return (
-        <main className="app-main">
+        <main className={classes.main}>
             <div>
                 <img src="https://previews.123rf.com/images/peshkov/peshkov1904/peshkov190401017/121172277-creative-new-york-city-background-skyline-tourism-and-downtown-concept.jpg" alt=""/>
             </div>
@@ -14,8 +15,12 @@ const userProfile = () => {
             <div className="user-posts">
                 <h2>My Posts</h2>
                 <input type="text"/>
-                <div></div>
-                <div></div>
+                <div className={classes.item}>
+                    item 1
+                </div>
+                <div className={classes.item}>
+                    item 1
+                </div>
             </div>
         </main>
     )
