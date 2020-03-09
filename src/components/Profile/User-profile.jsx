@@ -1,5 +1,6 @@
 import React from 'react';
-import classes from './User-profile.module.css'
+import classes from './User-profile.module.css';
+import MyPosts from './MyPosts/MyPosts';
 
 const userProfile = () => {
     return (
@@ -12,16 +13,7 @@ const userProfile = () => {
                 <h2></h2>
                 <p></p>
             </div>
-            <div className="user-posts">
-                <h2>My Posts</h2>
-                <input type="text"/>
-                <div className={classes.item}>
-                    item 1
-                </div>
-                <div className={classes.item}>
-                    item 1
-                </div>
-            </div>
+            <MyPosts />
         </main>
     )
 }
