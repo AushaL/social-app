@@ -48,3 +48,6 @@
   background-color: #edeef0;
 }
 
+.app-wrapper-content {
+    grid-area: main;
+}
