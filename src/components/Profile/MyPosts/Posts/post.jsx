@@ -1,12 +1,11 @@
 import React from 'react';
-import classes from './post.module.css';
+import classes from './Post.module.css';
 
-const Post = () => {
+const Post = (props) => {
     return (
         <div className={classes.item}>
             <img src="https://toppng.com/public/uploads/preview/app-icon-set-login-icon-comments-avatar-icon-11553436380yill0nchdm.png" alt="user avatar"/>
-            item 1
-            <button>like</button>
+            {props.message}
         </div>
     )
 }

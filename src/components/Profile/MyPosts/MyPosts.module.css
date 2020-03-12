@@ -2,3 +2,11 @@
     grid-area: main;
     background-color: red;
   }
+
+  .greed {
+    color: green;
+  }
+
+  .size {
+    font-size: 20px;
+  }
