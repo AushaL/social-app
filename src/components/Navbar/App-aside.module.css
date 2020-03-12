@@ -13,6 +13,7 @@
 
 .item:hover {
     background-color: rgba(91, 110, 133, 0.3);
+    cursor: default;
 }
 
 .link {
