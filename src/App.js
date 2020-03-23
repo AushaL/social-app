@@ -4,18 +4,21 @@ import Header from './components/Header/Header';
 import AppAside from './components/Navbar/App-aside';
 import UserProfile from './components/Profile/User-profile';
 import Messages from './components/Messages/Messages'
+import {BrowserRouter, Route } from 'react-router-dom';
 
 
 const App = () => {
   return (
-    <div className="app-wrapper">
-      <Header />
-      <AppAside />
-      {/* <UserProfile /> */}
-      <div className='app-wrapper-content'>
-        <Messages />
+    <BrowserRouter>
+      <div className="app-wrapper">
+        <Header />
+        <AppAside />
+        <div className='app-wrapper-content'>
+          <Route path='/messages' component={Messages} />
+          <Route path='/profile' component={UserProfile} />
+        </div>
       </div>
-    </div>
+    </BrowserRouter>
   );
 }
 

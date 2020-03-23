@@ -3,7 +3,9 @@ import classes from './Messages.module.css';
 
 const Messages = (props) => {
     return (
-        <div></div>
+        <div>
+            new message
+        </div>
     )
 }
 
